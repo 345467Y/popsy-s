@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="./scripts/script.js"></script>
+    <title>Heladería</title>
+
+</head>
+<body>
+    <div class="container" >
+        <img src="./images/Pospys.png" alt="Logo popsy" class="imagen1">
+        <div id="containerForm">
+            <form  onsubmit="return validateFormOnSubmit(this)">
+                <div class="inputContainer">
+                    <label>
+                        Nombre:
+                        <input id="name" type="text" required>
+                    </label>
+                </div>
+
+                <div class="inputContainer">
+                    <label>
+                        Apellido:
+                        <input id="lastName" type="text" required>
+                    </label>
+                </div>
+
+                <div class="inputContainer">
+                    <label>
+                        Dirección:
+                        <input type="text" id="addres" required>
+                    </label>
+                </div>
+
+                <div class="inputContainer">
+                    <label>
+                        Nro. contacto:
+                        <input type="number" id="phoneNumber" required>
+                    </label>
+                </div>
+
+                <div class="inputContainer">
+                    <label for=""> Sabor de helado:
+                        <select name="" id="sabor" onchange="changeImg()" required>
+                            <option selected="true" disabled="disabled">Opciones</option>
+                            <option value="Sandia.png">Sandia</option>
+                            <option value="Maracuya.png">Maracuyá</option>
+                            <option value="Kiwi.png">Kiwi</option>
+                            <option value="Durazno.png">Durazno</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="containerImg" class="ocultar">
+                    <img src="" id="imgSelect" class="imagenSabor">
+                </div>
+
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
+        <div id="factura" class="ocultar">
+            <div class="inputContainer">
+                <label>
+                    Nombre:
+                    <div id="nombreFactura"></div>
+                </label>
+            </div>
+
+            <div class="inputContainer">
+                <label>
+                    Apellido:
+                    <div id="apellidoFactura"></div>
+                </label>
+            </div>
+
+            <div class="inputContainer">
+                <label>
+                    Dirección:
+                    <div id="direccionFactura"></div>
+                </label>
+            </div>
+
+            <div class="inputContainer">
+                <label>
+                    Nro. contacto:
+                    <div id="numeroFactura"></div>
+                </label>
+            </div>
+
+            <div class="inputContainer">
+                <label for=""> Sabor de helado:
+                    <div id="saborFactura"></div>
+                </label>
+            </div>
+
+        
+        </div>
+    </div>  
+</body>
+</html>

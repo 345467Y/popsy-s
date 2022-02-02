@@ -1,0 +1,38 @@
+.container {
+    background-color: white;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.imagen1{
+    width: 300px;
+}
+
+.inputContainer{
+    margin: 15px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    background-color: deeppink;
+    border-bottom: firebrick;
+}
+
+body{
+    background-color: deeppink;
+}
+
+.ocultar{
+    display: none;
+}
+
+.imagenSabor{
+    max-width: 140px;
+    max-height: 140px;
+
+}
